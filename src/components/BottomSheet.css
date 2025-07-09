@@ -1,0 +1,57 @@
+.bottom-sheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80vh;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(70%);
+  transition: transform 0.3s ease-out;
+  z-index: 1000;
+}
+
+.bottom-sheet--closed {
+  transform: translateY(70%);
+}
+
+.bottom-sheet--half {
+  transform: translateY(40%);
+}
+
+.bottom-sheet--full {
+  transform: translateY(0%);
+}
+
+.bottom-sheet__handle {
+  width: 40px;
+  height: 4px;
+  background: #ccc;
+  border-radius: 2px;
+  margin: 12px auto;
+  cursor: grab;
+}
+
+.bottom-sheet__content {
+  padding: 20px;
+  height: calc(100% - 40px);
+  overflow-y: auto;
+}
+
+.demo-controls {
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  z-index: 2000;
+  display: flex;
+  gap: 10px;
+}
+
+.demo-controls button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
