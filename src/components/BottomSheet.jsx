@@ -108,6 +108,7 @@ const BottomSheet = ({children}) => {
   return (
      <>
       <div className="demo-controls">
+        <h1>Click here</h1>
         <button onClick={() => setPosition('closed')}>Closed</button>
         <button onClick={() => setPosition('half')}>Half</button>
         <button onClick={() => setPosition('full')}>Full</button>
